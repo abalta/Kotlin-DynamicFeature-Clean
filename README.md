@@ -62,7 +62,7 @@ Each module has own Clean Architecture layers.
 
 ## Showroom
 
-| Module  |  OnboardingFragments                | SelectPlatformFragment                                                       |
-|-------|--------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| `:onboarding` | <img src="misc/onboarding_1.jpg" width="250"> | <img src="misc/onboarding_2.jpg" width="250"> | <img src="misc/onboarding_3.jpg" width="250"> | <img src="misc/select_platform.jpg" width="250">
-| `:home`  | <img src="misc/home.jpg" width="250">  |
+| Module        |  OnboardingFragments                          |                                               |                                               | SelectPlatformFragment                                  |
+|---------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|---------------------------------------------------------|
+| `:onboarding` | <img src="misc/onboarding_1.jpg" width="180"> | <img src="misc/onboarding_2.jpg" width="180"> | <img src="misc/onboarding_3.jpg" width="180"> | <img src="misc/select_platform.jpg" width="180">        |
+| `:home`       | <img src="misc/home.jpg" width="180">         |                                               |                                               |                                                         |
