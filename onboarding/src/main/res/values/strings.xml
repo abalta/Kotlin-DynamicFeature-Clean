@@ -6,5 +6,5 @@
     <string name="platform_ps">Play Station</string>
     <string name="platform_xbox">Xbox</string>
     <string name="platform_nintendo">Nintendo</string>
-    <string name="text_continue">Devam</string>
+    <string name="text_continue">Continue</string>
 </resources>
