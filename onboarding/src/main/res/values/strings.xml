@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="title_choose_platform">Platformunu Seç</string>
-    <string name="label_choose_platform">Klavye ve fare vazgeçilmezin mi?\nYoksa sıkı bir konsol oyuncusu musun?</string>
+    <string name="title_choose_platform">Choose your platform</string>
+    <string name="label_choose_platform">Are the keyboard and mouse indispensable?\nOr are you a hardcore console player?</string>
     <string name="platform_pc">PC</string>
     <string name="platform_ps">Play Station</string>
     <string name="platform_xbox">Xbox</string>
