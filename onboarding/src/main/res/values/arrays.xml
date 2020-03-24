@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Onboarding Strings-->
+    <string-array name="title_onboarding">
+        <item>Keşfet</item>
+        <item>Oyna</item>
+        <item>Oyuncu Ol</item>
+
+    </string-array>
+
+    <!--Onboarding Strings-->
+    <string-array name="description_onboarding">
+        <item>Popüler oyunları keşfet.\nÇıkacak oyunları takip et.</item>
+        <item>Oynadığın oyunları listene ekle.\nYorum yap, beğen.</item>
+        <item>Casual, Pro, Hardcore.\nSen hangi oyuncusun?</item>
+    </string-array>
+
+</resources>

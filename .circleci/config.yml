@@ -1,0 +1,31 @@
+version: 2.1
+
+orbs:
+ android: circleci/android@0.2.0
+
+jobs:
+  build:
+    filters:
+      branches:
+        only:
+          - master
+
+    working_directory: ~/Modular
+
+    docker:
+      - image: circleci/android:api-29
+
+    environment:
+      GRADLE_OPTS: -Xmx4g -Dorg.gradle.daemon=false
+      JVM_OPTS: -Xmx4g
+
+    executor: android/android
+        
+    steps:
+      - checkout
+      - run:
+          name: Build Debug
+          command: ./gradlew assembleDebug
+      - run:
+          name: Build
+          command: ./gradlew build

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobiaxe.onboarding">
+
+    <dist:module
+        dist:instant="false"
+        dist:title="@string/title_onboarding">
+        <dist:delivery>
+            <dist:install-time />
+        </dist:delivery>
+
+        <dist:fusing dist:include="false" />
+    </dist:module>
+
+    <application tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".presentation.OnboardingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher"
+            tools:ignore="LockedOrientationActivity" />
+    </application>
+
+</manifest>

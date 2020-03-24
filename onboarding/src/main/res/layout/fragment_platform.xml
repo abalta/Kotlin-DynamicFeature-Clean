@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="viewModel" type="com.mobiaxe.onboarding.presentation.OnboardingViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_onboarding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/platform_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/title_onboarding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/title_choose_platform"
+            android:textAppearance="@style/HeadLineMedium.Bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/btn_windows"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.552"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/description_onboarding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/label_choose_platform"
+            android:textAppearance="@style/SubtitleLarge.Regular"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_xbox" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/description_onboarding"
+            android:layout_marginTop="16dp"
+            style="@style/FilledButton"
+            android:text="@string/text_continue"
+            app:rippleColor="@color/cod_gray"
+            android:backgroundTint="@color/onboarding_continue_btn_color"
+            android:enabled="@{viewModel.checkWindowsObsv || viewModel.checkPlaystationObsv || viewModel.checkNintendoObsv || viewModel.checkXboxObsv}"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="24dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_windows"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            style="@style/SelectableCardView"
+            app:isSelected="@{viewModel.checkWindowsObsv}"
+            app:layout_constraintBottom_toTopOf="@+id/btn_xbox"
+            app:layout_constraintEnd_toEndOf="@+id/btn_xbox"
+            app:layout_constraintStart_toStartOf="@+id/btn_xbox"
+            app:layout_constraintTop_toBottomOf="@+id/title_onboarding">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_windows" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/platform_pc"
+                    android:textAppearance="@style/SubtitleLarge.Regular"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_playstation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/SelectableCardView"
+            app:isSelected="@{viewModel.checkPlaystationObsv}"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_windows"
+            app:layout_constraintEnd_toEndOf="@+id/btn_nintendo"
+            app:layout_constraintStart_toStartOf="@+id/btn_nintendo">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_playstation"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/platform_ps"
+                    android:textAppearance="@style/SubtitleLarge.Regular"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_nintendo"
+            style="@style/SelectableCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            app:isSelected="@{viewModel.checkNintendoObsv}"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_xbox"
+            app:layout_constraintEnd_toEndOf="@+id/img_onboarding"
+            app:layout_constraintStart_toEndOf="@+id/btn_xbox">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_nintendo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/platform_nintendo"
+                    android:textAppearance="@style/SubtitleLarge.Regular"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_xbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            style="@style/SelectableCardView"
+            app:isSelected="@{viewModel.checkXboxObsv}"
+            app:layout_constraintTop_toBottomOf="@+id/btn_windows"
+            app:layout_constraintEnd_toStartOf="@+id/btn_nintendo"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="383dp"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_xbox"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/platform_xbox"
+                    android:textAppearance="@style/SubtitleLarge.Regular"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WASD</string>
+    <string name="title_onboarding">Onboarding</string>
+    <string name="title_home">Home</string>
+</resources>

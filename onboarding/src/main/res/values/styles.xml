@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="FilledButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:padding">8dp</item>
+        <item name="android:textAppearance">@style/SubtitleMedium.Regular</item>
+        <item name="android:textColor">@color/cod_gray</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="SelectableCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardBackgroundColor">@color/cloud_burst_alpha</item>
+        <item name="android:checkable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="cardElevation">0dp</item>
+        <item name="checkedIcon">@drawable/ic_tick</item>
+        <item name="checkedIconTint">@color/white</item>
+        <item name="contentPadding">8dp</item>
+    </style>
+
+</resources>

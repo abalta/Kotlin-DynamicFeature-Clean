@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--HEADLINES START-->
+
+    <!--XXXLarge-->
+
+    <style name="HeadLineXXXLarge.Bold" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/moon_bold_v2</item>
+    </style>
+
+    <style name="HeadLineXXXLarge.Light" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/moon_light_v2</item>
+    </style>
+
+    <style name="HeadLineXXXLarge.Regular" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/panton_regular</item>
+    </style>
+
+    <!--XXLarge-->
+
+    <style name="HeadLineXXLarge.Bold" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/moon_bold_v2</item>
+    </style>
+
+    <style name="HeadLineXXLarge.Light" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/moon_light_v2</item>
+    </style>
+
+    <style name="HeadLineXXLarge.Regular" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/panton_regular</item>
+    </style>
+
+    <!--Large-->
+
+    <style name="HeadLineLarge.Bold" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/moon_bold_v2</item>
+    </style>
+
+    <style name="HeadLineLarge.Light" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/moon_light_v2</item>
+    </style>
+
+    <style name="HeadLineLarge.Regular" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/panton_regular</item>
+    </style>
+
+    <!--Medium-->
+
+    <style name="HeadLineMedium.Bold" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/moon_bold_v2</item>
+    </style>
+
+    <style name="HeadLineMedium.Light" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/moon_light_v2</item>
+    </style>
+
+    <style name="HeadLineMedium.Regular" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/panton_regular</item>
+    </style>
+
+    <!--Small-->
+
+    <style name="HeadLineSmall.Bold" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/moon_bold_v2</item>
+    </style>
+
+    <style name="HeadLineSmall.Light" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/moon_light_v2</item>
+    </style>
+
+    <style name="HeadLineSmall.Regular" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/panton_regular</item>
+    </style>
+
+    <!--SmallX-->
+
+    <style name="HeadLineSmallX.Bold" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/moon_bold_v2</item>
+    </style>
+
+    <style name="HeadLineSmallX.Light" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/moon_light_v2</item>
+    </style>
+
+    <style name="HeadLineSmallX.Regular" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/panton_regular</item>
+    </style>
+
+    <!--HEADLINES END-->
+
+    <!--SUBTITLES START-->
+
+    <style name="SubtitleLarge.Bold" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/moon_bold_v2</item>
+    </style>
+
+    <style name="SubtitleLarge.Light" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/moon_light_v2</item>
+    </style>
+
+    <style name="SubtitleLarge.Regular" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/panton_regular</item>
+    </style>
+
+    <style name="SubtitleMedium.Bold" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/moon_bold_v2</item>
+    </style>
+
+    <style name="SubtitleMedium.Light" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/panton_light</item>
+    </style>
+
+    <style name="SubtitleMedium.Regular" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/panton_regular</item>
+    </style>
+
+    <!--SUBTITLES END-->
+
+</resources>

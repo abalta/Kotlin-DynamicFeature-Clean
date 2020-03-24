@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="onboardingData" type="com.mobiaxe.onboarding.data.OnboardingData"/>
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_onboarding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:imageDrawable="@{onboardingData.background}"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/title_onboarding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/HeadLineMedium.Bold"
+            app:layout_constraintBottom_toTopOf="@+id/description_onboarding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@{onboardingData.title}"
+            tools:text="TITLE"/>
+
+        <TextView
+            android:id="@+id/description_onboarding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="128dp"
+            android:textAppearance="@style/HeadLineSmallX.Regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:lineSpacingExtra="4sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@{onboardingData.description}"
+            tools:text="Description"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
