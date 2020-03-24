@@ -60,9 +60,11 @@ Each module has own Clean Architecture layers.
 -   `:home` module is install-time delivery feature module, this module install when app is downloaded.
 -   `:app` this is simple application module, this is responsible for navigate feature modules.
 
-## Showroom
+## Showroom - UI
 
-| Module        |  OnboardingFragments                          |                                               |                                               | SelectPlatformFragment                                  |
+| Module        |  OnboardingFragments                          | ViewPager2 - TabLayout                        | MaterialAndroid                               | SelectPlatformFragment                                  |
 |---------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|---------------------------------------------------------|
 | `:onboarding` | <img src="misc/onboarding_1.jpg" width="180"> | <img src="misc/onboarding_2.jpg" width="180"> | <img src="misc/onboarding_3.jpg" width="180"> | <img src="misc/select_platform.jpg" width="180">        |
+| Module        |  HomeFragment - BottomNavigationView          | Pagination - Horizontal RecyclerView          | NavigationComponent                           |                                                         |
+|---------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|---------------------------------------------------------|
 | `:home`       | <img src="misc/home.jpg" width="180">         |                                               |                                               |                                                         |
