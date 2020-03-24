@@ -59,3 +59,10 @@ Each module has own Clean Architecture layers.
 -   `:onboarding` module is install-time delivery feature module, this module install when app is downloaded. (Uninstall this module is upcoming development progress.)
 -   `:home` module is install-time delivery feature module, this module install when app is downloaded.
 -   `:app` this is simple application module, this is responsible for navigate feature modules.
+
+## Showroom
+
+| Module  |  OnboardingFragments                | SelectPlatformFragment                                                       |
+|-------|--------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| `:onboarding` | <img src="misc/onboarding_1.jpg" width="250"> | <img src="misc/onboarding_2.jpg" width="250"> | <img src="misc/onboarding_3.jpg" width="250"> | <img src="misc/select_platform.jpg" width="250">
+| `:home`  | <img src="misc/home.jpg" width="250">  |
