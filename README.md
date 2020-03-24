@@ -62,9 +62,14 @@ Each module has own Clean Architecture layers.
 
 ## Showroom - UI
 
+[OnboardingActivity](https://github.com/abalta/Kotlin-DynamicFeature-Clean/blob/master/onboarding/src/main/java/com/mobiaxe/onboarding/presentation/OnboardingActivity.kt)
+
 | Module        |  OnboardingFragments                          | ViewPager2 - TabLayout                        | MaterialAndroid                               | SelectPlatformFragment                                  |
 |---------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|---------------------------------------------------------|
 | `:onboarding` | <img src="misc/onboarding_1.jpg" width="180"> | <img src="misc/onboarding_2.jpg" width="180"> | <img src="misc/onboarding_3.jpg" width="180"> | <img src="misc/select_platform.jpg" width="180">        |
+
+[DashboardActivity](https://github.com/abalta/Kotlin-DynamicFeature-Clean/blob/master/app/src/main/java/com/mobiaxe/wasd/dashboard/DashboardActivity.kt)
+
 | Module        |  HomeFragment - BottomNavigationView          | Pagination - Horizontal RecyclerView          | NavigationComponent                           |                                                         |
 |---------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|---------------------------------------------------------|
 | `:home`       | <img src="misc/home.jpg" width="180">         |                                               |                                               |                                                         |
