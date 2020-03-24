@@ -50,3 +50,12 @@ When you obtain the key, you can provide them to the app by putting the followin
 #IGDB API KEY
 apiToken = <insert>
 ```
+
+## Architecture
+
+Each module has own Clean Architecture layers.
+
+-   `:core` module only responsible for implement common dependencies, holds remote (Retrofit) and cache (Room) repositories.
+-   `:onboarding` module is install-time delivery feature module, this module install when app is downloaded. (Uninstall this module is upcoming development progress.)
+-   `:home` module is install-time delivery feature module, this module install when app is downloaded.
+-   `:app` this is simple application module, this is responsible for navigate feature modules.
