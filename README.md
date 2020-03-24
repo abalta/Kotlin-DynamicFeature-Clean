@@ -18,7 +18,7 @@ This project brings to table set of best practices, tools, and solutions:
 
 ## Tech-stack
 
-* Libraries and Framworks
+* Libraries and Frameworks
     * [Kotlin](https://kotlinlang.org/) + [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - perform background operations
     * [Koin](https://insert-koin.io/) - dependency injection
     * [Retrofit](https://square.github.io/retrofit/) - networking
